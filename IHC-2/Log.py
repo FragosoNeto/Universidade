@@ -1,6 +1,5 @@
 import csv
 from PyQt5 import  uic,QtWidgets
-import sqlite3
 import time
 import pandas as pd
 
