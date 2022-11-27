@@ -56,9 +56,7 @@ def cadastrar():
             tela_cadastro.close()
 
 
-
-
-        except sqlite3.Error as erro:
+        except (ValueError, TypeError) as erro:
             print("Erro ao inserir os dados: ",erro)
     else:
         tela_cadastro.label_6.setText("As senhas digitadas estão diferentes")
